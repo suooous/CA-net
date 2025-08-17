@@ -63,7 +63,7 @@ The **Contour Completion Module** integrates:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ca-net.git
+git clone https://github.com/suooous/CA-net.git
 cd ca-net
 
 # Install dependencies
