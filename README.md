@@ -76,9 +76,9 @@ Organize your data in the following structure:
 ```
 data/
 ├── train_image/     # Training images
-├── train_label/     # Training labels (3-class)
+├── train_label/     # Training labels 
 ├── test_image/      # Test images
-└── test_label/      # Test labels (3-class)
+└── test_label/      # Test labels 
 ```
 
 ### Training
@@ -88,7 +88,7 @@ data/
 python train.py
 
 # Training with custom parameters
-python train.py --epochs 100 --batch-size 8 --lr 1e-4
+python train.py 
 ```
 
 ### Testing & Evaluation
@@ -97,38 +97,18 @@ python train.py --epochs 100 --batch-size 8 --lr 1e-4
 # Evaluate model performance
 python test_cto_model.py
 
-# Generate visualizations
-python visualize_3class_outputs.py
-
-# Demo contour detection
-python demo_contour.py
 ```
 
-## 📊 Results
-
-### Segmentation Performance
-
-| Metric | Class 0 (Background) | Class 1 (Upper) | Class 2 (Lower) | Mean |
-|--------|---------------------|------------------|------------------|------|
-| Dice   | 0.95+              | 0.90+            | 0.88+            | 0.91+ |
-| IoU    | 0.90+              | 0.82+            | 0.79+            | 0.84+ |
-
-### Contour Detection Performance
-
-| Metric | Value |
-|--------|-------|
-| Contour Dice | 0.85+ |
-| Contour IoU  | 0.75+ |
 
 ### Visual Results
 
 <div align="center">
-  <img src="3class_model_outputs/3class_outputs_visualization.png" width="800" alt="3-Class Segmentation Results">
+  <img src="https://github.com/user-attachments/assets/a5c688bc-0510-4764-b7d4-3a090256a3b1" width="800" alt="3-Class Segmentation Results">
   <p><em>3-Class Segmentation Results with Contour Detection</em></p>
 </div>
 
 <div align="center">
-  <img src="contour_demo_results/contour_visualization.png" width="600" alt="Contour Detection Demo">
+  <img src="https://github.com/user-attachments/assets/e7a83bdd-8974-4f73-8fc7-c3a4fe9f32f9" width="600" alt="AoP computation">
   <p><em>Contour Detection and Completion Results</em></p>
 </div>
 
@@ -212,11 +192,7 @@ The model typically converges within 50-100 epochs with:
 - **Contour Loss**: Gradual improvement with contour refinement
 - **Validation Metrics**: Stable improvement across all classes
 
-### Computational Requirements
 
-- **GPU Memory**: 8GB+ recommended
-- **Training Time**: ~2-4 hours on RTX 3080
-- **Inference Time**: ~50ms per 512×512 image
 
 ## 🤝 Contributing
 
@@ -228,25 +204,7 @@ We welcome contributions! Please feel free to:
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📄 Citation
 
-If you find this work useful, please cite our paper:
-
-```bibtex
-@article{canet2024,
-  title={CA-net: Contour-Aware Network for Medical Image Segmentation},
-  author={Your Name and Co-authors},
-  journal={arXiv preprint arXiv:xxxx.xxxxx},
-  year={2024}
-}
-```
-
-## 📞 Contact
-
-- **Author**: Your Name
-- **Email**: your.email@institution.edu
-- **Institution**: Your Institution
-- **GitHub**: [@yourusername](https://github.com/yourusername)
 
 ## 📜 License
 
