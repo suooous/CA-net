@@ -109,7 +109,7 @@ python test_cto_model.py
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/e7a83bdd-8974-4f73-8fc7-c3a4fe9f32f9" width="600" alt="AoP computation">
-  <p><em>Contour Detection and Completion Results</em></p>
+  <p><em>AoP computation</em></p>
 </div>
 
 ## 🔧 Model Configuration
